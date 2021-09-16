@@ -79,7 +79,7 @@ scene("game", ({ level, score }) => {
       sprite("background"),
       layer("bg"),
       
-      pos(-1385,-1140)
+      pos(-1385,-1100)
     ])
     
   const maps = [
