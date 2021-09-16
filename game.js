@@ -30,7 +30,7 @@ let isJumping = true
 loadRoot('https://i.imgur.com/')
 loadSprite('coin', 'G3TMPFI.png?1')
 loadSprite('background','0tdFv3g.png')
-loadSprite('background1','VmmoGam.png?2')
+loadSprite('background1','qAJDuy1.png?1')
 loadSprite('evil-shroom', 'KPO3fR9.png')
 loadSprite('brick', 'pogC9x5.png')
 loadSprite('block', 'i0Jujrj.jpg?1')
