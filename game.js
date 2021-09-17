@@ -6,7 +6,7 @@ kaboom({
   clearColor: [0, 0, 0, 1],
 })
 const MOVE_SPEED = 400
-const JUMP_FORCE = 660
+const JUMP_FORCE = 680
 const BIG_JUMP_FORCE = 550
 let CURRENT_JUMP_FORCE = JUMP_FORCE
 const FALL_DEATH = 400
