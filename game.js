@@ -10,9 +10,9 @@ const JUMP_FORCE = 700
 const BIG_JUMP_FORCE = 550
 let CURRENT_JUMP_FORCE = JUMP_FORCE
 const FALL_DEATH = 400
-const pipex1=1500
+const pipex1=1700
 const pipey1= 200
-const pipex2=1700
+const pipex2=1900
 const pipey2=260
 const ENEMY_SPEED = 20
 
@@ -36,7 +36,7 @@ loadSprite('brick', 'pogC9x5.png')
 loadSprite('block', 'i0Jujrj.jpg?1')
 loadSprite('base','H1zqVSA.png?1')
 loadSprite('base1','Yd5riZI.png')
-loadSprite('mario', 'p1phXk2.png?2')
+loadSprite('mario', 'p1phXk2.png?3')
 loadSprite('mario1','4PpaX2S.png')
 loadSprite('mushroom', '0wMd92p.png')
 loadSprite('surprise', 'XkOj7sw.png?1')
@@ -52,7 +52,7 @@ loadSprite('surprise', 'XkOj7sw.png?1')
 // loadSprite('B', 'gesQ1KP.png')
 //loadSprite('C', 'gesQ1KP.png')
 loadSprite('unboxed', 'PYCGp87.jpg?1')
-loadSprite('pipe-top-left', 'ReTPiWY.png')
+loadSprite('pipe-top-left', 'eBItFb0.png?2')
 loadSprite('white','P6ypm0Y.jpg?1')
 loadSprite('white1','654dae2.jpg?1')
 loadSprite('white2','t2eUCKG.jpg?1')
@@ -61,7 +61,7 @@ loadSprite('side1','VqBFcIq.png')
 loadSprite('white4','i0Jujrj.jpg?1')
 loadSprite('pipe-top-right', 'hj2GK4n.png')
 loadSprite('pipe-bottom-left', 'c1cYSbt.png')
-loadSprite('pipe-bottom-right', 'nqQ79eI.png')
+loadSprite('pipe-bottom-right', 'eBItFb0.png?2')
 loadSprite('blue-block', 'fVscIbn.png')
 loadSprite('blue-brick', '3e5YRQd.png')
 loadSprite('blue-steel', 'gqVoI2b.png')
@@ -79,7 +79,7 @@ scene("game", ({ level, score }) => {
       sprite("background"),
       layer("bg"),
       
-      pos(-1385,-1100)
+      pos(-1385,-850)
     ])
     
   const maps = [
@@ -97,8 +97,7 @@ scene("game", ({ level, score }) => {
   ';                                                                                           ;',
   ';                                                                                           ;',
   ';                                                                                           ;',
-  ';                                                                             -+            ;',
-  ';                                                                             ()            ;',
+  ';                                                                                     -     ;',
   '! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ;',
     ]
   ]
@@ -167,11 +166,11 @@ scene("game", ({ level, score }) => {
   add([sprite('white'),pos(1275,60)])
   add([sprite('white'),pos(1390,60)])
   add([text('Hockey        Cricket'), pos(1283, 65),color(0,0,0)])
-  add([sprite('white'),pos(1553,218)])
-  add([text('EXIT' ), pos(1563, 220),color(0,0,0)])
-  add([text('|' ), pos(1574, 233),color(0,0,0)])
-  add([text('|' ), pos(1574, 240),color(0,0,0)])
-  add([text('\\\/' ), pos(1570, 240),color(0,0,0)])
+  add([sprite('white'),pos(1753,218)])
+  add([text('EXIT' ), pos(1763, 220),color(0,0,0)])
+  add([text('|' ), pos(1774, 233),color(0,0,0)])
+  add([text('|' ), pos(1774, 240),color(0,0,0)])
+  add([text('\\\/' ), pos(1770, 240),color(0,0,0)])
   
   function big() {
     let timer = 0
